@@ -1,0 +1,19 @@
+{
+  "name": "OPA Demo (docker-compose)",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "opa-demo",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "postCreateCommand": "echo 'Devcontainer ready'",
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}
