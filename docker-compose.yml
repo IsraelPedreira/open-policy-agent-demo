@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  opa-demo:
+    build: .
+    container_name: opa-demo
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    stdin_open: true
+    tty: true

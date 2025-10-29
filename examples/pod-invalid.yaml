@@ -1,0 +1,10 @@
+kind: Pod
+metadata:
+    name: bad-pod
+spec:
+    hostNetwork: true
+    containers:
+        - name: nginx
+          image: nginx:latest
+          securityContext:
+              privileged: true
